@@ -314,9 +314,9 @@ public class NodeUtil {
     /**
      * Find (build a list of) nodes sorted by dependency.
      * <p>
-     * Leverages (a) node (as in DAG) types, and (b) node before/after type sets to order nodes in "ranks". Typically,
-     * ranks (edge lengths) are purely ordinal, as in 0 (first), 1 (second), etc. If this is the case, baseRank and all
-     * integers in results are just a traversal order.
+     * Leverages (a) node (as in DAG) types, and (b) node before/after type sets to organize nodes according to "ranks"
+     * (edge lengths). Typically, ranks are purely ordinal, as in 0 (first), 1 (second), etc. If this is the case,
+     * baseRank and all integers in results are just a traversal order.
      * <p>
      * E.g., if you're just trying to figure out what order to install software dependencies based solely on (a)
      * types and (b) before/after relationships, order is all that matters and ranks can all be (intervals of) 1.
@@ -368,9 +368,9 @@ public class NodeUtil {
     /**
      * Find (build a map of) nodes and ranks sorted by dependency.
      * <p>
-     * Leverages (a) node (as in DAG) types, and (b) node before/after type sets to order nodes in "ranks". Typically,
-     * ranks (edge lengths) are purely ordinal, as in 0 (first), 1 (second), etc. If this is the case, baseRank and all
-     * integers in results are just a traversal order.
+     * Leverages (a) node (as in DAG) types, and (b) node before/after type sets to organize nodes according to "ranks"
+     * (edge lengths). Typically, ranks are purely ordinal, as in 0 (first), 1 (second), etc. If this is the case,
+     * baseRank and all integers in results are just a traversal order.
      * <p>
      * E.g., if you're just trying to figure out what order to install software dependencies based solely on (a)
      * types and (b) before/after relationships, order is all that matters and ranks can all be (intervals of) 1.
