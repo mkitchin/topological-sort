@@ -312,18 +312,18 @@ public class NodeUtil {
     }
 
     /**
-     * Find (build a list of) nodes and ranks sorted by dependency.
+     * Find (build a list of) nodes sorted by dependency.
      * <p>
-     * Leverages (a) node (as in DAG) types, and (b) node before/after type sets to order nodes in "ranks" (orders).
-     * Typically, ranks are purely ordinal, as in 0 (first), 1 (second), etc. If this is the case, baseRank and all
+     * Leverages (a) node (as in DAG) types, and (b) node before/after type sets to order nodes in "ranks". Typically,
+     * ranks (edge lengths) are purely ordinal, as in 0 (first), 1 (second), etc. If this is the case, baseRank and all
      * integers in results are just a traversal order.
      * <p>
      * E.g., if you're just trying to figure out what order to install software dependencies based solely on (a)
      * types and (b) before/after relationships, order is all that matters and ranks can all be (intervals of) 1.
      * <p>
-     * E.g., if you're trying to start a bunch of processes with (a) types, (b) before/after relationships and
-     * (c) integral delays, ranks may be used to represent those delays, because the end goal is an ordered,
-     * cumulative timeline.
+     * E.g., if you're trying to sequence a bunch of inter-dependant processes in a single, cumulative timeline,
+     * using (a) types, (b) before/after relationships with (c) integral delays, ranks may be used to represent that
+     * timeline.
      *
      * @param baseRank     Starting rank, offsetting node-to-node ranks (used for layered runs; good default=0L).
      * @param input        Collection of nodes to examine.
@@ -366,18 +366,18 @@ public class NodeUtil {
     }
 
     /**
-     * Find (build a list of) nodes and ranks sorted by dependency.
+     * Find (build a map of) nodes and ranks sorted by dependency.
      * <p>
-     * Leverages (a) node (as in DAG) types, and (b) node before/after type sets to order nodes in "ranks" (orders).
-     * Typically, ranks are purely ordinal, as in 0 (first), 1 (second), etc. If this is the case, baseRank and all
+     * Leverages (a) node (as in DAG) types, and (b) node before/after type sets to order nodes in "ranks". Typically,
+     * ranks (edge lengths) are purely ordinal, as in 0 (first), 1 (second), etc. If this is the case, baseRank and all
      * integers in results are just a traversal order.
      * <p>
      * E.g., if you're just trying to figure out what order to install software dependencies based solely on (a)
      * types and (b) before/after relationships, order is all that matters and ranks can all be (intervals of) 1.
      * <p>
-     * E.g., if you're trying to start a bunch of processes with (a) types, (b) before/after relationships and
-     * (c) integral delays, ranks may be used to represent those delays, because the end goal is an ordered,
-     * cumulative timeline.
+     * E.g., if you're trying to sequence a bunch of inter-dependant processes in a single, cumulative timeline,
+     * using (a) types, (b) before/after relationships with (c) integral delays, ranks may be used to represent that
+     * timeline.
      *
      * @param baseRank     Starting rank, offsetting node-to-node ranks (used for layered runs; good default=0L).
      * @param input        Collection of nodes to examine.
