@@ -139,8 +139,7 @@ public class NodeUtil {
 
                     // if we've gotten nodes of this type, merge the type-based
                     // rank to the output map (we merge because a given node may
-                    // qualify under more than one type -- e.g., "ABC-123" (story) and
-                    // "ABC-234" (task)).
+                    // qualify under more than one type).
                     for (final String beforeNodeItem : beforeTypeNodes) {
 
                         NodeUtil.mergeNodeRanks(beforeNodeItem, beforeTypeEntry.getValue(), beforeMap);
@@ -167,8 +166,7 @@ public class NodeUtil {
 
                     // if we've gotten nodes of this type, merge the type-based
                     // rank to the output map (we merge because a given node may
-                    // qualify under more than one type -- e.g., "ABC-123" (story) and
-                    // "ABC-234" (task)).
+                    // qualify under more than one type).
                     for (final String afterNodeItem : afterTypeNodes) {
 
                         NodeUtil.mergeNodeRanks(afterNodeItem, afterTypeEntry.getValue(), afterMap);
