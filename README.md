@@ -6,7 +6,7 @@ Example of indirected topological sort algorithm.
 
 Look for comments in the following:
 * **NodeData** - Payload class (i.e., the thing to be sorted).
-* **NodeUtil** - Sorting algorithm and supporting methods, especially findNodeOrders() methods.
+* **NodeUtil** - Sorting algorithm and supporting methods, especially *findNodeOrders()* methods.
 
 Look for examples in the following:
 * **NodeUtilTest** - Simple positive/negative examples.
