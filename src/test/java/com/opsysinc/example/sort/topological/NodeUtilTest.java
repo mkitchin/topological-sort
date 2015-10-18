@@ -77,7 +77,7 @@ public class NodeUtilTest {
         final String outputListText = outputList.toString();
         assertEquals(outputListText, "[Node1, Node3, Node2, Node4]");
 
-        System.out.println("testSimpleGoodSort() = " + outputList);
+        System.out.println("testSimpleGoodSort() = " + outputListText);
     }
 
     /**
